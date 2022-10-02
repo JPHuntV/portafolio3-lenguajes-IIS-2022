@@ -27,8 +27,11 @@ S: alimentos del grupo X
 R: debe existir un hecho con dicho grupo
 O: imprime los alimentos de un grupo 
 */
-imprimeAlimentos(X):-alimento(X,Y),write("Alimento: "),write(Y),nl,1=2.
 imprimeAlimentos(_):- true.
+imprimeAlimentos(X):-
+    alimento(X,Y),
+    write("Alimento: "),write(Y),nl,
+    1=2.
 
 
 /*
@@ -37,5 +40,8 @@ S: cantidad de alimentos del grupo X
 R: debe existir un hecho con dicho grupo
 O: imprime la cantidad de alimentos de un grupo 
 */
-cuentaAlimentos(X):- findall(X, alimento(X,_), Lista), length(Lista, Cant),write(Cant).
+cuentaAlimentos(X):- 
+    findall(X, alimento(X,_), Lista), 
+    length(Lista, Cant),
+    write(Cant).
 

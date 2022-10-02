@@ -5,7 +5,6 @@ Portafolio 3
 imprimirDigitos: imprime los digitos de un numero de derecha a izquierda
 */
 
-
 /*
 E:Numero: un numero 
 S:digitos del numero 
